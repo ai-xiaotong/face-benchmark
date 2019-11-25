@@ -9,7 +9,7 @@ This repository aims at evaluating face-verification's performance
 - To evaluate Tencent API, you must have an Tencent Cloud account as well as an AccessKey.
 - Only support Python3.x.
 
-## Install
+## Installation
 
 ```
 pip install requirements.txt
@@ -21,10 +21,10 @@ pip install requirements.txt
 2. Replace `pairs.csv`. Each line follows format as `<ImagePath0>:<ImagePath1>,<Label>`.
 3. Generate the score csv.
 ```
-python3 aliyun_face_benchmark.py
+python3 run_aliyun_face_benchmark.py
+python3 run_tencentclound_face_benchmark.py
 ```
 4. Plot ROC curve.
 ```
-
+python3 run_evaluation.py aliyun-score.csv tencentcloud-score.csv
 ```
-

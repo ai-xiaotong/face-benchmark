@@ -3,7 +3,7 @@ from multiprocessing.dummy import Pool
 from itertools import islice
 import traceback
 
-from tencentcloud_face_api import TencentCloudFaceApi
+from run_tencentcloud_face_api import TencentCloudFaceApi
 from config import TENCENT_AK_ID, TENCENT_AK_SECRET
 
 batch_size = 1000
