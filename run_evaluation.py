@@ -21,7 +21,7 @@ def get_roc(path, start=1., stop=100., step=0.1):
                 tokens = line.strip().split(',')
                 score = float(tokens[1])
                 pair = tokens[0].split(':')
-                gt = pair[0].split('/')[1] == pair[1].split('/')[1]
+                gt = pair[0].split('/')[-2] == pair[1].split('/')[-2]
                 scores.append(score)
                 gts.append(gt)
 
