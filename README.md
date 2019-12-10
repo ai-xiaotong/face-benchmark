@@ -1,3 +1,4 @@
+[English](https://github.com/ai-xiaotong/face-benchmark) | [中文简体](https://github.com/ai-xiaotong/face-benchmark/blob/master/README_CN.md)
 # Face Benchmark For famous open APIs
 
 This repository aims at evaluating face-verification's performance
@@ -17,16 +18,6 @@ pip install requirements.txt
 git clone https://github.com/ai-xiaotong/aixiaotong-python-sdk.git
 cd aixiaotong-python-sdk && pip install .
 ```
-
-## OpenChildFace Dataset
-
-Currently, commercial face recognition systems can reach extraordinarily high performance for adult data.
-However, when turning to child data, most of them achieve much lower score.
-In order to evaluate the effectiveness of low-age face recognition,
-we release a child sub-dataset `OpenChildFace`, which is extracted from glint-asian and glint-msra.
-
-The dataset can be download from
-[Baidu cloud disk](https://pan.baidu.com/s/1gjmYh-Oo1p4zKWDdcYduGA)(extracting code: gl08)
 
 ## Usage
 
