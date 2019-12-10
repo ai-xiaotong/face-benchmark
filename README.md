@@ -7,12 +7,15 @@ This repository aims at evaluating face-verification's performance
 
 - To evaluate Alibaba API, you must have an Alibaba Cloud account as well as an AccessKey.
 - To evaluate Tencent API, you must have an Tencent Cloud account as well as an AccessKey.
+- To evaluate Aixiaotong API, you must have an Aixiaotong account as well as an AccessKey.
 - Only support Python3.x.
 
 ## Installation
 
 ```
 pip install requirements.txt
+git clone https://github.com/ai-xiaotong/aixiaotong-python-sdk.git
+cd aixiaotong-python-sdk && pip install .
 ```
 
 ## Usage
@@ -23,8 +26,9 @@ pip install requirements.txt
 ```
 python3 run_aliyun_face_benchmark.py
 python3 run_tencentclound_face_benchmark.py
+python3 run_aixiaotong_face_benchmark.py
 ```
 4. Plot ROC curve.
 ```
-python3 run_evaluation.py aliyun-score.csv tencentcloud-score.csv
+python3 run_evaluation.py aliyun-score.csv tencentcloud-score.csv aixiaotong-score.csv
 ```

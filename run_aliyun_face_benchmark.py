@@ -7,7 +7,7 @@ from aliyun_face_api import AliyunFaceApi
 from config import ALIYUN_AK_ID, ALIYUN_AK_SECRET
 
 batch_size = 1000
-pool = Pool(50)
+pool = Pool(5)
 
 
 def verify_pair(pair):
